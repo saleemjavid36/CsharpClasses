@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CSharpClasses.DataTypes
 {
-    internal class ReferenceType
+    public class ReferenceType
     {
         public void ReferenceTypeExample()
         {

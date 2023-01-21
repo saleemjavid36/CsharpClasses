@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CSharpClasses.DataTypes
 {
-    internal class PointerType
+    public class PointerType
     {
         public void PointerTypeExample()
         {
