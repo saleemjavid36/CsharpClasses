@@ -1,6 +1,7 @@
 ﻿using CSharpClasses.Conditional_Statements;
 using CSharpClasses.Input_Output;
 using CSharpClasses.Loops;
+using CSharpClasses.Methods;
 using CSharpClasses.Operators;
 using CSharpClasses.Variables;
 using System;
@@ -42,10 +43,16 @@ namespace CSharpClasses
             ////infiniteLoop.InfiniteLoopExample();
             //BreakAndContinue breakAndContinue = new BreakAndContinue();
             //breakAndContinue.BreakAndContinueExample();
-            ForEach forEach = new ForEach();
-            forEach.ForEachLoopExample();
+            //ForEach forEach = new ForEach();
+            //forEach.ForEachLoopExample();
             //NestedLoop nestedLoop = new NestedLoop();
             //nestedLoop.NestedLoopExample();
+            Method method = new Method();
+            method.SumOfTwoNumbers();
+            MethodWithParameters methodWithParameters = new MethodWithParameters();
+            methodWithParameters.MethodCall();
+            MethodWithReturnType methodWithReturnType = new MethodWithReturnType();
+            methodWithReturnType.MethodCall();
 
         }
     }
