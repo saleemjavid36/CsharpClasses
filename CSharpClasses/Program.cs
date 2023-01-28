@@ -1,7 +1,9 @@
-﻿using CSharpClasses.Conditional_Statements;
+﻿using CSharpClasses.Arrays;
+using CSharpClasses.Conditional_Statements;
 using CSharpClasses.Input_Output;
 using CSharpClasses.Loops;
 using CSharpClasses.Methods;
+using CSharpClasses.OOPs;
 using CSharpClasses.Operators;
 using CSharpClasses.Variables;
 using System;
@@ -47,13 +49,33 @@ namespace CSharpClasses
             //forEach.ForEachLoopExample();
             //NestedLoop nestedLoop = new NestedLoop();
             //nestedLoop.NestedLoopExample();
-            Method method = new Method();
-            method.SumOfTwoNumbers();
-            MethodWithParameters methodWithParameters = new MethodWithParameters();
-            methodWithParameters.MethodCall();
-            MethodWithReturnType methodWithReturnType = new MethodWithReturnType();
-            methodWithReturnType.MethodCall();
+            //ArrayClass array = new ArrayClass();
+            //array.ArrayExample();
+            //IterationArrayUsingLoop iterationArrayUsingLoop = new IterationArrayUsingLoop();
+            //iterationArrayUsingLoop.Example();
+            //MultiDimensionalArray multiDimensionalArrayUsingLoop = new MultiDimensionalArray();
+            //multiDimensionalArrayUsingLoop.MultiDimensionalArrayExample();
+            //Method method = new Method();
+            //method.SumOfTwoNumbers();
+            //MethodWithParameters methodWithParameters = new MethodWithParameters();
+            //methodWithParameters.MethodCall();
+            //MethodWithReturnType methodWithReturnType = new MethodWithReturnType();
+            //methodWithReturnType.MethodCall();
+            //DefaultParameter defaultParameter = new DefaultParameter();
+            //defaultParameter.MethodCall();
+            Student student = new Student();
+            student.Id = 1;
+            student.FirstName = "Nishant";
+            student.LastName = "Gupta";
+            student.Mobile = 9870880111;
+            student.PrintNameLength();
 
+            Student student2 = new Student();
+            student.Id = 2;
+            student.FirstName = "Shubham";
+            student.LastName = "Gupta";
+            student.Mobile = 123456754;
+            student.PrintNameLength();
         }
     }
 }

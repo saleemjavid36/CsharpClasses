@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Linq;
+using System.Runtime.ExceptionServices;
 
 namespace CSharpClasses.Arrays
 {
-    internal class Array
+    public class ArrayClass
     {
         public void ArrayExample()
         {
@@ -29,23 +30,23 @@ namespace CSharpClasses.Arrays
             //cars4 = { "Volvo", "BMW", "Ford"};
 
             // how to access element of an array
-            Console.WriteLine(cars[0]);
+            Console.WriteLine("Element at zero index in cars array - " + cars4[0]);
             // Outputs Volvo
 
             // how to assign the element at a purticular index of array
-            cars[0] = "Opel";
-            Console.WriteLine(cars[0]);
+            cars4[0] = "Opel";
+            Console.WriteLine("element at 0 index after updating value - " + cars4[0]);
             // Now outputs Opel instead of Volvo
 
             // how to check the length of an array
-            Console.WriteLine(cars.Length);
+            Console.WriteLine(" length of the array - " + cars.Length);
             // Outputs 4
 
             //other methods
             int[] myNumbers = { 5, 1, 8, 9 };
-            Console.WriteLine(myNumbers.Max());  // returns the largest value
-            Console.WriteLine(myNumbers.Min());  // returns the smallest value
-            Console.WriteLine(myNumbers.Sum());  // returns the sum of elements
+            Console.WriteLine("Max - " + myNumbers.Max());  // returns the largest value
+            Console.WriteLine("Min - " + myNumbers.Min());  // returns the smallest value
+            Console.WriteLine("Sum - " + myNumbers.Sum());  // returns the sum of elements
 
             //iteration using loop
             foreach(int i in myNumbers)
