@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CSharpClasses.OOPs.Polymorphism
 {
-    internal class A
+    internal class RunTimePolymorphism_Parent
     {
         public virtual void Show()
         {
@@ -12,7 +12,8 @@ namespace CSharpClasses.OOPs.Polymorphism
             Console.WriteLine("Parent Class Show Method");
         }
     }
-    internal class B: A {
+    internal class RunTimePolymorphism_Child: RunTimePolymorphism_Parent
+    {
         //Overriding Method
         public override void Show()
         {
@@ -21,16 +22,16 @@ namespace CSharpClasses.OOPs.Polymorphism
         }
     }
 
-    internal class C 
+    internal class RunTimePolymorphism
     {
         public void Display()
         {
-            A a = new B();
+            RunTimePolymorphism_Parent a = new RunTimePolymorphism_Child();
             a.Show();
 
-            A obj1 = new B();
+            RunTimePolymorphism_Parent obj1 = new RunTimePolymorphism_Child();
             obj1.Show();
-            B obj2 = new B();
+            RunTimePolymorphism_Child obj2 = new RunTimePolymorphism_Child();
             obj2.Show();
             Console.ReadKey();
         }

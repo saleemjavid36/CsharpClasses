@@ -26,4 +26,16 @@ namespace CSharpClasses.OOPs.Polymorphism
             Console.WriteLine($"{real} + i{img}");
         }
     }
+    public class OperatorOverloading
+    {
+        public void Display()
+        {
+            Complex c1 = new Complex(3, 7);
+            c1.Display();
+            Complex c2 = new Complex(5, 2);
+            c2.Display();
+            Complex c3 = Complex.Add(c1, c2);
+            c3.Display();
+        }
+    }
 }

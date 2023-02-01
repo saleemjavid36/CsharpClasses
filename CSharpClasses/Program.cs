@@ -7,6 +7,7 @@ using CSharpClasses.OOPs.AccessModifiers;
 using CSharpClasses.OOPs.Constructor;
 using CSharpClasses.OOPs.Encapsulation;
 using CSharpClasses.OOPs.Inheritance;
+using CSharpClasses.OOPs.Polymorphism;
 using CSharpClasses.Operators;
 using CSharpClasses.Variables;
 using System;
@@ -17,35 +18,23 @@ namespace CSharpClasses
     {
         static void Main(string[] args)
         {
-            BaseKeywordChild b = new BaseKeywordChild();
-            b.Method3();
-            b.Method2();
-            b.Method1();
-            //Third third = new Third();
-            //third.Display();
-            //PrivateConstructor privateConstructor = new PrivateConstructor();
-            //StaticConstructor staticConstructor = new StaticConstructor();
+            //Compile Time Polymorphism
+            CompileTimePolymorphism obj = new CompileTimePolymorphism();
+            obj.Add(10, 20);
+            obj.Add(10.5f, 20.5f);
+            obj.Add("Pranaya", "Rout"); Console.ReadKey();
 
-            //CopyConstructor parameterized = new CopyConstructor(5);
-            //parameterized.Display();
-            //CopyConstructor copyConstructor = new CopyConstructor(parameterized);
-            //copyConstructor.Display();
-            //Bank bank = new Bank();
-            //You cannot access the Private Variable
-            //bank.balance; //Compile Time Error
-            //You can access the private variable via public setter and getter methods
-            //bank.SetBalance(500);
-            //Console.WriteLine(bank.GetBalance());
-            //if we do not follow the encapsulation
-            //IfDoNotFollowEncapsulation ifDoNotFollowEncapsulation = new IfDoNotFollowEncapsulation();
-            // ifDoNotFollowEncapsulation.Amount = -250;
-            // Console.WriteLine(ifDoNotFollowEncapsulation.Amount);
-            //IfWeFollowEncapsulation ifWeFollowEncapsulation = new IfWeFollowEncapsulation();
-            //ifWeFollowEncapsulation.SetAmount(10);
-            //Console.WriteLine(ifWeFollowEncapsulation.GetAmount());
-            //ProtectedAccessModifier protectedAccessModifier = new ProtectedAccessModifier();
-            //protectedAccessModifier.Id
+            //Run Time Polymorphism
+            RunTimePolymorphism runTimePolymorphism = new RunTimePolymorphism();
+            runTimePolymorphism.Display();
 
+            //Operator Overloading
+            OperatorOverloading operatorOverloading = new OperatorOverloading();
+            operatorOverloading.Display();
+
+            //Method Overriding
+            MethodOverriding methodOverriding = new MethodOverriding();
+            methodOverriding.Display();
         }
     }
 }

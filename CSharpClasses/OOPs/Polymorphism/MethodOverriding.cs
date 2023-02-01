@@ -55,9 +55,9 @@ namespace CSharpClasses.OOPs.Polymorphism
         //return fixed bonus 50000
         //no need to overide the method
     }
-    class Program
+    class MethodOverriding
     {
-        static void Display(string[] args)
+        public void Display()
         {
             Employee emp1 = new Developer
             {
