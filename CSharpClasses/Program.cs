@@ -3,7 +3,10 @@ using CSharpClasses.Conditional_Statements;
 using CSharpClasses.Input_Output;
 using CSharpClasses.Loops;
 using CSharpClasses.Methods;
-using CSharpClasses.OOPs;
+using CSharpClasses.OOPs.AccessModifiers;
+using CSharpClasses.OOPs.Constructor;
+using CSharpClasses.OOPs.Encapsulation;
+using CSharpClasses.OOPs.Inheritance;
 using CSharpClasses.Operators;
 using CSharpClasses.Variables;
 using System;
@@ -14,68 +17,35 @@ namespace CSharpClasses
     {
         static void Main(string[] args)
         {
-            //UserInputOutput userInputOutput = new UserInputOutput();
-            //userInputOutput.TakeInputFromUser();
-            //Console.WriteLine("Hello Nishant");
-            //Airthmatic airthmatic = new Airthmatic();
-            //airthmatic.ArithmaticOperators();
-            //Relational relational = new Relational();
-            //relational.RelationalOperators();
-            //Logical logical = new Logical();
-            //logical.LogicalOperators();
-            //Bitwise bitwise = new Bitwise();
-            //bitwise.BitwiseOperators();
-            //Ifclass ifclass = new Ifclass();
-            //ifclass.Example();
-            //Ifelse ifelse = new Ifelse();
-            //ifelse.Example();
-            //If_elseIf_else if_ElseIf_Else = new If_elseIf_else();
-            //if_ElseIf_Else.Example();
-            //TernaryOperator ternaryOperator = new TernaryOperator();
-            //ternaryOperator.Example();
-            //SwitchClass switchClass = new SwitchClass();
-            //switchClass.Example();
-            //ForLoop forLoop= new ForLoop();
-            //forLoop.ForLoopExample();
-            //WhileLoop whileLoop = new WhileLoop();
-            //whileLoop.WhileLoopExample();
-            //DoWhile doWhile = new DoWhile();
-            //doWhile.DoWhileExample();
-            ////InfiniteLoop infiniteLoop = new InfiniteLoop();
-            ////infiniteLoop.InfiniteLoopExample();
-            //BreakAndContinue breakAndContinue = new BreakAndContinue();
-            //breakAndContinue.BreakAndContinueExample();
-            //ForEach forEach = new ForEach();
-            //forEach.ForEachLoopExample();
-            //NestedLoop nestedLoop = new NestedLoop();
-            //nestedLoop.NestedLoopExample();
-            //ArrayClass array = new ArrayClass();
-            //array.ArrayExample();
-            //IterationArrayUsingLoop iterationArrayUsingLoop = new IterationArrayUsingLoop();
-            //iterationArrayUsingLoop.Example();
-            //MultiDimensionalArray multiDimensionalArrayUsingLoop = new MultiDimensionalArray();
-            //multiDimensionalArrayUsingLoop.MultiDimensionalArrayExample();
-            //Method method = new Method();
-            //method.SumOfTwoNumbers();
-            //MethodWithParameters methodWithParameters = new MethodWithParameters();
-            //methodWithParameters.MethodCall();
-            //MethodWithReturnType methodWithReturnType = new MethodWithReturnType();
-            //methodWithReturnType.MethodCall();
-            //DefaultParameter defaultParameter = new DefaultParameter();
-            //defaultParameter.MethodCall();
-            Student student = new Student();
-            student.Id = 1;
-            student.FirstName = "Nishant";
-            student.LastName = "Gupta";
-            student.Mobile = 9870880111;
-            student.PrintNameLength();
+            BaseKeywordChild b = new BaseKeywordChild();
+            b.Method3();
+            b.Method2();
+            b.Method1();
+            //Third third = new Third();
+            //third.Display();
+            //PrivateConstructor privateConstructor = new PrivateConstructor();
+            //StaticConstructor staticConstructor = new StaticConstructor();
 
-            Student student2 = new Student();
-            student.Id = 2;
-            student.FirstName = "Shubham";
-            student.LastName = "Gupta";
-            student.Mobile = 123456754;
-            student.PrintNameLength();
+            //CopyConstructor parameterized = new CopyConstructor(5);
+            //parameterized.Display();
+            //CopyConstructor copyConstructor = new CopyConstructor(parameterized);
+            //copyConstructor.Display();
+            //Bank bank = new Bank();
+            //You cannot access the Private Variable
+            //bank.balance; //Compile Time Error
+            //You can access the private variable via public setter and getter methods
+            //bank.SetBalance(500);
+            //Console.WriteLine(bank.GetBalance());
+            //if we do not follow the encapsulation
+            //IfDoNotFollowEncapsulation ifDoNotFollowEncapsulation = new IfDoNotFollowEncapsulation();
+            // ifDoNotFollowEncapsulation.Amount = -250;
+            // Console.WriteLine(ifDoNotFollowEncapsulation.Amount);
+            //IfWeFollowEncapsulation ifWeFollowEncapsulation = new IfWeFollowEncapsulation();
+            //ifWeFollowEncapsulation.SetAmount(10);
+            //Console.WriteLine(ifWeFollowEncapsulation.GetAmount());
+            //ProtectedAccessModifier protectedAccessModifier = new ProtectedAccessModifier();
+            //protectedAccessModifier.Id
+
         }
     }
 }
