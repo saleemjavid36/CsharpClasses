@@ -17,6 +17,9 @@ namespace CSharpClasses.OOPs.Polymorphism
         //Overriding Method
         public override void Show()
         {
+            base.Show();
+            RunTimePolymorphism_Parent obj = new RunTimePolymorphism_Parent();
+            obj.Show();
             //Child Class Reimplementing the Logic
             Console.WriteLine("Child Class Show Method");
         }
@@ -29,7 +32,7 @@ namespace CSharpClasses.OOPs.Polymorphism
             RunTimePolymorphism_Parent a = new RunTimePolymorphism_Child();
             a.Show();
 
-            RunTimePolymorphism_Parent obj1 = new RunTimePolymorphism_Child();
+            RunTimePolymorphism_Parent obj1 = new RunTimePolymorphism_Parent();
             obj1.Show();
             RunTimePolymorphism_Child obj2 = new RunTimePolymorphism_Child();
             obj2.Show();

@@ -18,5 +18,9 @@ namespace CSharpClasses.OOPs.Polymorphism
         {
             Console.WriteLine(s1 + " " + s2);
         }
+        public void Add(int b, int a, int c)
+        {
+            Console.WriteLine(a + b + c);
+        }
     }
 }
