@@ -20,7 +20,7 @@ namespace CSharpClasses.OOPs.Inheritance
     {
     }
 
-    internal class WhyNotSupportedMultipleInheritance: B,C
+    internal class WhyNotSupportedMultipleInheritance: B
     {
         public void Display()
         {
