@@ -11,11 +11,20 @@ namespace CSharpClasses.OOPs.Abstraction.Interface
         bool WithdrawAmount(decimal amount);
         decimal CheckBalance();
     }
-    public class SavingAccount : IBankAccount
+    interface IPrintPassbook
+    {
+        void PrintPassbook();
+    }
+
+    public class SavingAccount : IBankAccount, IPrintPassbook
     {
         private decimal Balance = 0;
         private readonly decimal PerDayWithdrawLimit = 10000;
         private decimal TodayWithdrawal = 0;
+        public void PrintPassbook()
+        {
+
+        }
         public bool DepositAmount(decimal Amount)
         {
             Balance = Balance + Amount;

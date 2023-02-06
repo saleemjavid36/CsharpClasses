@@ -12,15 +12,15 @@ namespace CSharpClasses.OOPs.Inheritance
         } 
     }
 
-    public class B
+    public class B: A
     {
-        public void Print()
-        {
-            Console.WriteLine("class B");
-        }
+
+    }
+    public class C: A
+    {
     }
 
-    internal class WhyNotSupportedMultipleInheritance: A
+    internal class WhyNotSupportedMultipleInheritance: B,C
     {
         public void Display()
         {

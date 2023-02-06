@@ -4,7 +4,18 @@ using System.Text;
 
 namespace CSharpClasses.OOPs.Abstraction.Interface
 {
-    interface ITestInterfaceExample
+
+    public class Example {
+        public void Display()
+        {
+            ITestInterfaceExample testInterfaceExample = null;
+            ImplementationClass implementationClass = new ImplementationClass();
+            testInterfaceExample = implementationClass;
+            testInterfaceExample.Add(3, 5);
+        }
+    }
+
+    public interface ITestInterfaceExample
     {
         void Add(int num1, int num2);
     }
@@ -22,4 +33,5 @@ namespace CSharpClasses.OOPs.Abstraction.Interface
             Console.WriteLine($"Divison of {num1} and {num2} is {num1 - num2}");
         }
     }
+
 }
