@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CSharpClasses.OOPs
+namespace CSharpClasses.OOPs.TypesOfClass
 {
     public class Student
     {
         public Student()
         {
-                
+
         }
-        public int Id { get; set; } 
+        public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public int Age { get; set; }
