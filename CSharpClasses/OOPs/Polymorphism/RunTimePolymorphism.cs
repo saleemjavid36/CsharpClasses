@@ -36,7 +36,6 @@ namespace CSharpClasses.OOPs.Polymorphism
             obj1.Show();
             RunTimePolymorphism_Child obj2 = new RunTimePolymorphism_Child();
             obj2.Show();
-            Console.ReadKey();
         }
         
     }

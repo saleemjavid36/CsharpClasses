@@ -15,7 +15,6 @@ namespace CSharpClasses.Delegates.RealLifeExample
             WorkCompletedHandler del2 = new WorkCompletedHandler(Worker_WorkCompleted);
             Worker worker = new Worker();
             worker.DoWork(5, "Generating Report", del1, del2);
-            Console.ReadKey();
         }
         //Delegate Signature must match with the method signature
         static void Worker_WorkPerformed(int hours, string workType)

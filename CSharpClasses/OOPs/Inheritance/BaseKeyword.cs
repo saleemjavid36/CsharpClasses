@@ -32,7 +32,6 @@ namespace CSharpClasses.OOPs.Inheritance
         static void Display()
         {
             BaseKeywordChild obj = new BaseKeywordChild();
-            Console.ReadKey();
         }
     }
 }

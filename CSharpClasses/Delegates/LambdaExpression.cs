@@ -15,7 +15,6 @@ namespace CSharpClasses.Delegates
             };
             string GreetingsMessage = obj.Invoke("Pranaya");
             Console.WriteLine(GreetingsMessage);
-            Console.ReadKey();
         }
         public static string Greetings(string name)
         {

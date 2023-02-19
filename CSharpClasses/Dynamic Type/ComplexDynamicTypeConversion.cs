@@ -19,8 +19,6 @@ namespace CSharpClasses.Dynamic_Type
             Console.WriteLine($"Name = {dynamicStudent.Name}");
             Console.WriteLine($"Barnch = {dynamicStudent.Barnch}");
             Console.WriteLine($"Roll = {dynamicStudent.Roll}");
-
-            Console.ReadKey();
         }
         public void DynamicToComplexType()
         {
@@ -35,8 +33,6 @@ namespace CSharpClasses.Dynamic_Type
             Console.WriteLine($"Name = {student1.Name}");
             Console.WriteLine($"Barnch = {student1.Barnch}");
             Console.WriteLine($"Roll = {student1.Roll}");
-
-            Console.ReadKey();
         }
     }
     public class Student

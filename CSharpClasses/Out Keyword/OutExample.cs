@@ -16,7 +16,6 @@ namespace CSharpClasses.Out_Keyword
             Console.WriteLine("Name: {0}, Gender: {1}, Salary: {2}, Department: {3}",
             EmployeeName, Gender, Salary, Department);
             Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
         }
         static void GetEmployeeDetails(out string EmployeeName, out string Gender, out long Salary, out string Department)
         {

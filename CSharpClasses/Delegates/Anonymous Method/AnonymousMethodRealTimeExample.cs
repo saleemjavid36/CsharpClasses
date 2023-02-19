@@ -28,7 +28,6 @@ namespace CSharpClasses.Delegates.Anonymous_Method
             Employee employee = listEmployees.Find(x => employeePredicate(x));
             Console.WriteLine(@"ID : {0}, Name : {1}, Gender : {2}, Salary : {3}",
                 employee.ID, employee.Name, employee.Gender, employee.Salary);
-            Console.ReadKey();
         }
         // Step 2: 
         // Create a method whose signature matches with the
@@ -70,7 +69,6 @@ namespace CSharpClasses.Delegates.Anonymous_Method
                                 );
             Console.WriteLine(@"ID : {0}, Name : {1}, Gender : {2}, Salary : {3}",
                 employee.ID, employee.Name, employee.Gender, employee.Salary);
-            Console.ReadKey();
         }
     }
 }

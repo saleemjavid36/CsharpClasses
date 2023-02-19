@@ -16,7 +16,6 @@ namespace CSharpClasses.Dynamic_Type
             dynamic dynamic2 = 100;
             int int2 = dynamic2; //Explicit cast not required
             Console.WriteLine($"int2 = {int2} & d2 = {dynamic2}");
-            Console.ReadKey();
         }
     }
 }

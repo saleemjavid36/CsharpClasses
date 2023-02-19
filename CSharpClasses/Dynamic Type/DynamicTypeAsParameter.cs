@@ -14,7 +14,6 @@ namespace CSharpClasses.Dynamic_Type
             DisplayValue(5000); //Integer
             DisplayValue(111.50); //Double
             DisplayValue(DateTime.Now); //Date
-            Console.ReadKey();
         }
         public void DisplayValue(dynamic val)
         {
