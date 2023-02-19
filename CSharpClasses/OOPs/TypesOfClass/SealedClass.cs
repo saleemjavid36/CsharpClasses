@@ -54,7 +54,7 @@ namespace CSharpClasses.OOPs.TypesOfClass
         }
     }
     //Further No Inheritance is Possible as we marked the class as sealed
-    //public class TempManager : Manager
+    //public class TempManager : Manager1
     //{
     //}
 

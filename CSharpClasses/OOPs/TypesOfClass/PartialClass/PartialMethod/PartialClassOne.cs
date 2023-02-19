@@ -7,12 +7,16 @@ namespace CSharpClasses.OOPs.TypesOfClass.PartialClass.PartialMethod
     partial class PartialClass
     {
         // Declaration of the partial method.
-        partial void PartialMethod();
+        partial void PartialMethod(int i);
         // A public method calling the partial method
         public void PublicMethod()
         {
             Console.WriteLine("Public Method Invoked");
-            PartialMethod();
+            PartialMethod(5);
         }
+
+      
     }
+
+ 
 }

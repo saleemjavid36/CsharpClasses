@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CSharpClasses.OOPs.TypesOfClass.PartialClass
 {
-    public partial class PartialEmployee
+    public partial class PartialEmployee: Parent2
     {
         public void DisplayFullName()
         {
@@ -18,5 +18,8 @@ namespace CSharpClasses.OOPs.TypesOfClass.PartialClass
             Console.WriteLine($"Gender : {Gender}");
             Console.WriteLine($"Salary : {Salary}");
         }
+    }
+    public class Parent2 { 
+    public string Name { get; set; }
     }
 }
