@@ -9,8 +9,7 @@ namespace CSharpClasses.Out_Keyword
         public void Example()
         {
             string s = "09-Jun-2018";
-            DateTime date;
-            if (DateTime.TryParse(s, out date))
+            if (DateTime.TryParse(s, out DateTime date))
             {
                 Console.WriteLine(date);
             }

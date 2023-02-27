@@ -6,7 +6,7 @@ namespace CSharpClasses.Delegates.Anonymous_Method
 {
     internal class AnonymousMethodRealTimeExample
     {
-        static void Example()
+        public void Example()
         {
             // Step 3: 
             // Create an instance of Predicate<Employee> delegate and 
@@ -46,7 +46,7 @@ namespace CSharpClasses.Delegates.Anonymous_Method
     }
     class AnonymousMethodExample
     {
-        public void Example()
+        public void Example2()
         {
             //Step2
             //Create a collection of List of Employees

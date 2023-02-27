@@ -6,7 +6,7 @@ namespace CSharpClasses.Out_Keyword
 {
     internal class OutExample
     {
-        public void Main()
+        public void Example()
         {
             string Gender, Department;
             long Salary;

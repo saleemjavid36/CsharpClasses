@@ -13,7 +13,7 @@ namespace CSharpClasses.Delegates
             {
                 return "Hello @" + name + " welcome to Dotnet Tutorials";
             };
-            string GreetingsMessage = obj.Invoke("Pranaya");
+            string GreetingsMessage = obj.Invoke("Nishant Gupta");
             Console.WriteLine(GreetingsMessage);
         }
         public static string Greetings(string name)

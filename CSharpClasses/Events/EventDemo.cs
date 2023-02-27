@@ -15,6 +15,7 @@ namespace CSharpClasses.Events
         public void DoWork(int hours, WorkType workType)
         {
             //Raising Events
+            Console.WriteLine("Event Raised - " + WorkType.Golf);
         }
     }
     public enum WorkType
