@@ -1,6 +1,12 @@
 ﻿
+using CSharpClasses.Collections.Generics;
+using CSharpClasses.Collections.NonGenericCollection.ArrayList_Examples;
+using CSharpClasses.Collections.NonGenericCollection.Hashtable_Examples;
 using CSharpClasses.Enums;
+using CSharpClasses.Events;
+using CSharpClasses.Indexers;
 using CSharpClasses.Ref_vs_Out;
+using CSharpClasses.Tuple;
 using System;
 
 namespace CSharpClasses
@@ -11,21 +17,24 @@ namespace CSharpClasses
         {
             try
             {
+                ClsMain clsMain = new ClsMain();
+                clsMain.Example();
 
-                //EnumExample example = new EnumExample();
-                //example.Example();
+                GenericsExample genericClass = new GenericsExample();
+                genericClass.Example();
 
-                EnumPointsToRemember points = new EnumPointsToRemember();
-                points.Example();
-                points.Example2();
-
-
+                MyGenericClass<int> integerGenericClass = new MyGenericClass<int>(10);
+                int val = integerGenericClass.GenericMethod(200);
+                Console.WriteLine(val);
+                MyGenericClass<string> stringGenericClass = new MyGenericClass<string>("Hello Generic World");
+                stringGenericClass.GenericProperty = "This is a generic property example.";
+                string result = stringGenericClass.GenericMethod("Generic Parameter");
+                Console.WriteLine(result);
             }
             catch (Exception ex)
             {
                 Console.WriteLine("some error occured");
             }
-            
         }
     }
 }

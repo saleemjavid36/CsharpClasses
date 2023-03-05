@@ -49,4 +49,6 @@ namespace CSharpClasses.Enums
         Thursday,
         Friday,
         Saturday,
+    }
+
 }

@@ -20,7 +20,7 @@ namespace CSharpClasses.Events
             for (int i = 0; i < hours; i++)
             {
                 OnWorkPerformed(i + 1, workType);
-                Thread.Sleep(3000);
+                Thread.Sleep(1000);
             }
             //Notify the consumer that work has been completed
             OnWorkCompleted();
@@ -38,27 +38,6 @@ namespace CSharpClasses.Events
                 };
                 WorkPerformed(this, e);
             }
-            //Approach2
-            //EventHandler<WorkPerformedEventArgs> del1 = WorkPerformed as EventHandler<WorkPerformedEventArgs;
-            //if (del1 != null)
-            //{
-            //    WorkPerformedEventArgs e = new WorkPerformedEventArgs()
-            //    {
-            //        Hours = hours,
-            //        WorkType = workType
-            //    };
-            //    del1(this, e);
-            //}
-            //Approach3
-            //if (WorkPerformed is EventHandler<WorkPerformedEventArgs> del2)
-            //{
-            //    WorkPerformedEventArgs e = new WorkPerformedEventArgs()
-            //    {
-            //        Hours = hours,
-            //        WorkType = workType
-            //    };
-            //    del2(this, e);
-            //}
         }
         protected virtual void OnWorkCompleted()
         {

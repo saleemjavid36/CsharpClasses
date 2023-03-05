@@ -14,8 +14,29 @@ namespace CSharpClasses.Events
         public event EventHandler WorkCompleted;
         public void DoWork(int hours, WorkType workType)
         {
+            if (WorkPerformed != null)
+            {
+                //WorkPerformed(5, WorkType.GenerateReports);
+                WorkPerformed.Invoke(5, WorkType.GenerateReports);
+            }
             //Raising Events
             Console.WriteLine("Event Raised - " + WorkType.Golf);
+        }
+
+        public void DoWorkInOtherWay(int hours, WorkType workType)
+        {
+            WorkPerformedHandler del = WorkPerformed as WorkPerformedHandler;
+            if (del != null)
+            {
+                del.Invoke(5, WorkType.GenerateReports);
+            }
+            //Raising Events
+            Console.WriteLine("Event Raised - " + WorkType.Golf);
+        }
+
+        public virtual void OnWorkPerformed()
+        {
+            WorkPerformed?.Invoke(8, WorkType.GenerateReports);
         }
     }
     public enum WorkType

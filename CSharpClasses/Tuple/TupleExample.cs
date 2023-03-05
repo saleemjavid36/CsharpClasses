@@ -11,7 +11,6 @@ namespace CSharpClasses.Tuple
             var values = new List<double>() { 10, 20, 30, 40, 50 };
             var result = Calulate(values);
             Console.WriteLine($"There are {result.Item1} values and their sum is {result.Item2}");
-            Console.ReadKey();
         }
 
         private static (int, double) Calulate(IEnumerable<double> values)
