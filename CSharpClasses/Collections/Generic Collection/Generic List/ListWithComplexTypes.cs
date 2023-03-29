@@ -49,7 +49,6 @@ namespace CSharpClasses.Collections.Generic_List
             }
             //If you want to get the index postion of a specific employee then use Indexof() method as follows
             Console.WriteLine("\nIndex of emp3 object in the List = " + listEmployees.IndexOf(emp3));
-            Console.ReadKey();
         }
 
         public void FindMethods()
@@ -113,8 +112,6 @@ namespace CSharpClasses.Collections.Generic_List
 
         public void SortAndReverseMethods()
         {
-            public static void Main()
-            {
                 List<int> numbersList = new List<int> { 1, 8, 7, 5, 2 };
                 Console.WriteLine("Numbers Before Sorting");
                 foreach (int i in numbersList)

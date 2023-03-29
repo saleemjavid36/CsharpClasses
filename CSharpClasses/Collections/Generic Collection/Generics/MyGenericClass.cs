@@ -8,7 +8,7 @@ namespace CSharpClasses.Collections.Generics
         {
             //Generic variable
             //The data type is generic i.e. T
-            private T GenericMemberVariable;
+            public T GenericMemberVariable;
             //Generic Constructor
             //Constructor accepts one parameter of Generic type i.e. T
             public MyGenericClass(T value)
@@ -29,4 +29,4 @@ namespace CSharpClasses.Collections.Generics
             public T GenericProperty { get; set; }
         }
     }
-}
+

@@ -44,7 +44,7 @@ namespace CSharpClasses.OOPs.Inheritance
             child.Method1();
             child.Method2();
             child.Method3();
-            //child.Method4
+            //child.Method4()
         }
         
     }

@@ -1,40 +1,32 @@
 ﻿
-using CSharpClasses.Collections.Generics;
-using CSharpClasses.Collections.NonGenericCollection.ArrayList_Examples;
-using CSharpClasses.Collections.NonGenericCollection.Hashtable_Examples;
-using CSharpClasses.Enums;
-using CSharpClasses.Events;
 using CSharpClasses.Indexers;
-using CSharpClasses.Ref_vs_Out;
-using CSharpClasses.Tuple;
+using CSharpClasses.Solid_Principles.DIP.Example_With_DIP;
+using CSharpClasses.Solid_Principles.ISP;
+using CSharpClasses.Solid_Principles.LSP;
+using CSharpClasses.Solid_Principles.OCP;
+using CSharpClasses.Solid_Principles.DIP;
 using System;
+using Employee = CSharpClasses.Solid_Principles.DIP.Employee;
 
 namespace CSharpClasses
 {
     internal class Program
     {
-        static void Main(string[] args)
+       public static void Main(string[] args)
         {
             try
             {
-                ClsMain clsMain = new ClsMain();
-                clsMain.Example();
+                EmployeeBusinessLogic employeeBusinessLogic = new EmployeeBusinessLogic();
+                Employee emp = employeeBusinessLogic.GetEmployeeDetails(1001);
+                Console.WriteLine($"ID: {emp.ID}, Name: {emp.Name}, Department: {emp.Department}, Salary: {emp.Salary}");
 
-                GenericsExample genericClass = new GenericsExample();
-                genericClass.Example();
 
-                MyGenericClass<int> integerGenericClass = new MyGenericClass<int>(10);
-                int val = integerGenericClass.GenericMethod(200);
-                Console.WriteLine(val);
-                MyGenericClass<string> stringGenericClass = new MyGenericClass<string>("Hello Generic World");
-                stringGenericClass.GenericProperty = "This is a generic property example.";
-                string result = stringGenericClass.GenericMethod("Generic Parameter");
-                Console.WriteLine(result);
             }
             catch (Exception ex)
             {
                 Console.WriteLine("some error occured");
             }
         }
+        
     }
 }

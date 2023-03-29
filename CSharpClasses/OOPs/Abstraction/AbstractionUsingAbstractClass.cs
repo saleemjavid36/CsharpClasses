@@ -11,6 +11,8 @@ namespace CSharpClasses.OOPs.Abstraction
         public abstract void CheckBalanace();
         public abstract void BankTransfer();
         public abstract void MiniStatement();
+
+        
     }
     public class BankFactoryClass
     {

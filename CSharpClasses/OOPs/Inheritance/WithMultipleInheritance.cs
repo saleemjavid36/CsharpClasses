@@ -36,7 +36,7 @@ namespace CSharpClasses.OOPs.Inheritance
             Console.WriteLine(PrintDuplexContent);
         }
     }
-    class LiquidInkjetPrinters : IPrinterServices
+    public class LiquidInkjetPrinters : IPrinterServices
     {
         public void Print(string PrintContent)
         {

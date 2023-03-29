@@ -6,7 +6,7 @@ namespace CSharpClasses.Collections.Generics
 {
     internal class GenericsExample
     {
-        private void Example()
+        public void Example()
         {
             bool IsEqual = Calculator.AreEqual<double>(10.5, 20.5);
             if (IsEqual)
@@ -17,7 +17,9 @@ namespace CSharpClasses.Collections.Generics
             {
                 Console.WriteLine("Both are Not Equal");
             }
-            Console.ReadKey();
+
+            bool res = Calculator.AreEqual<string>("nishant", "nishant");
+            Console.WriteLine(res);
         }
     }
 
