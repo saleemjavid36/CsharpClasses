@@ -15,6 +15,8 @@ namespace CSharpClasses.OOPs.Constructor
         }
         public void Display()
         {
+
+            ParameterizedConstructor parameterized = new ParameterizedConstructor(10);
             Console.WriteLine($"Value of X = {x}");
         }
     }

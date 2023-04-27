@@ -12,7 +12,7 @@ namespace CSharpClasses.Delegates
         {
             DelegatesExample delegatesExample = new DelegatesExample();
             WorkPerformedHandler del = new WorkPerformedHandler(delegatesExample.Manager_WorkPerformed);
-            del.Invoke(5, WorkType.Golf);
+            del(5, WorkType.Golf);
         }
 
         public void Manager_WorkPerformed(int workHours, WorkType wType)

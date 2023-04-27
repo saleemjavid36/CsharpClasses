@@ -49,6 +49,8 @@ namespace CSharpClasses.Delegates.Multicast_Delegates
             //Removing a method from delegate object
             multiDelegate -= example.Multiplication;
             multiDelegate.Invoke(15, 4);
+
+
         }
     }
 }
